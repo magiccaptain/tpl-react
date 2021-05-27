@@ -1,22 +1,12 @@
-import "./App.less";
+import "src/App.less";
 import { Button } from "antd";
-import styled from "styled-components";
-
-const Container = styled.div`
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+import { Layout } from "src/components/Layouts";
 
 function App() {
   return (
-    <Container>
+    <Layout>
       <Button type="primary">测试</Button>
-    </Container>
+    </Layout>
   );
 }
 
